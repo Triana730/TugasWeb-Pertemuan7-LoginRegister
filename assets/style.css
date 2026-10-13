@@ -1,0 +1,246 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f1025, #17142f, #0b0c1d);
+    color: white;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   LOGIN & REGISTER
+========================= */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.auth-header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.auth-header p {
+    color: #c5c5d8;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #44445f;
+    border-radius: 10px;
+    background: #17172d;
+    color: white;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #8b5cf6;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #7c3aed, #ec4899);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #c5c5d8;
+}
+
+.auth-footer a {
+    color: #c084fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* =========================
+   ALERT
+========================= */
+
+.alert {
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.alert.error {
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    color: #ff8b8b;
+}
+
+.alert.success {
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid rgba(34, 197, 94, 0.4);
+    color: #7df2a3;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.dashboard-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 22px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(12px);
+}
+
+.dashboard-icon {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.dashboard-card h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.welcome-text {
+    text-align: center;
+    color: #d6d6e7;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-item {
+    padding: 18px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.info-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-item span {
+    color: #aaaac0;
+    font-size: 13px;
+}
+
+.info-item strong {
+    font-size: 17px;
+    color: white;
+}
+
+.dashboard-description {
+    text-align: center;
+    color: #bdbdd0;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.btn-logout {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #ef4444, #ec4899);
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-logout:hover {
+    opacity: 0.9;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .dashboard-card {
+        padding: 25px;
+    }
+
+    .dashboard-card h1 {
+        font-size: 27px;
+    }
+
+    .auth-card {
+        padding: 25px;
+    }
+}
